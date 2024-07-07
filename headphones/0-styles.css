@@ -20,13 +20,19 @@
   color: #fff;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
 }
-
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
 /* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 200px; /* Add padding to give space around the navbar */
+  padding-top: 15px;
+}
+.navbar svg {
+  display: none;
 }
 
 .navbar img {
@@ -54,9 +60,10 @@
 
 /* Header section styling */
 .header {
-  margin-top: 372px;
+  margin-top: 295px;
   text-align: center;
-  padding: 0 382px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header p:first-of-type {
@@ -75,6 +82,8 @@
   border-radius: 50px;
   width: 162px;
   height: 44px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   border: none; /* Remove the border */
   cursor: pointer; /* Add a pointer cursor on hover */
@@ -86,5 +95,34 @@
 .header p:last-of-type {
   font-size: 16px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 116px; /* Adjust the margin value as needed */
+  max-width: 637px;
+}
+@media screen and  (max-width: 480px) {
+  /* Background styling */
+  .background {
+    background-size: calc();
+    padding: 0px 21px;
+  }
+  .navbar svg{
+    display: block;
+  }
+ .navbar{
+  max-width: 247px;
+  position: relative;
+ }
+ .nav-menu  {
+  display: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 140px;
+  top: 65px;
+  text-align: center;
+}
+.nav-menu li {
+  margin-top: 20px;
+}
 }

@@ -20,13 +20,19 @@
   color: #fff;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
 }
-
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
 /* Navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 200px; /* Add padding to give space around the navbar */
+  padding-top: 15px;
+}
+.navbar svg {
+  display: none;
 }
 
 .navbar img {
@@ -56,7 +62,9 @@
 .header {
   margin-top: 372px;
   text-align: center;
-  padding: 0 382px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 382px; */
 }
 
 .header p:first-of-type {
@@ -75,6 +83,8 @@
   border-radius: 50px;
   width: 162px;
   height: 44px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   border: none; /* Remove the border */
   cursor: pointer; /* Add a pointer cursor on hover */
@@ -86,14 +96,15 @@
 .header p:last-of-type {
   font-size: 16px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 116px; /* Adjust the margin value as needed */
+  max-width: 637px;
 }
 .what-we-do {
   text-align: center;
-  padding: 0px 200px;
 }
 .we-do {
-  /* margin: 97px 382px; */
   max-width: 637px;
   margin: auto;
 }
@@ -103,6 +114,10 @@
   margin-bottom: 40px;
   margin-top: 97px;
 }
+.we-do h1:hover {
+  color: #ff6565; /* Change color on hover */
+  scale: 1.25;
+}
 .we-do p {
   font-size: 16px;
   text-align: center;
@@ -111,8 +126,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 97px;
-
-  /* margin: 97px 382px; */
+  flex-wrap: wrap;
 }
 .icon {
   display: flex;
@@ -121,9 +135,6 @@
   text-align: center;
   margin-bottom: 110px;
   max-height: 193px;
-
-  /* justify-content: space-between; */
-  /* margin: 97px 382px; */
 }
 .icon img {
   margin-bottom: 23px;
@@ -151,33 +162,29 @@
   text-align: center;
 }
 .results {
-  padding: 0px 200px;
   display: flex;
   flex-direction: column;
-
-  /* align-content: center;
-    justify-items: center;
-    min-width: 100vh; */
 }
+.results h2:hover {
+  color: #ff6565; /* Change color on hover */
+}
+
 .our-results h2 {
   font-size: 32px;
   font-weight: bold;
-  /* margin-top: 141px; */
   padding-top: 141px;
   padding-bottom: 40px;
 }
 .our-results p {
   font-size: 16px;
-  /* margin-bottom: 56px; */
   max-width: 637px;
   margin: auto;
-  /* margin: 0px 382px; */
 }
 .dots {
   display: flex;
   justify-content: space-between;
   margin-bottom: 79px;
-  /* margin: 0px 382px; */
+  flex-wrap: wrap;
 }
 .dots img {
   width: 190px;
@@ -196,6 +203,7 @@
 .contact-us h2 {
   font-size: 32px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .contact-us form {
@@ -211,10 +219,10 @@
   margin-bottom: 15px;
   padding: 10px;
   font-size: 14px;
+  font-weight: bold;
   color: #000;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  /* border-radius: 5px; */
 }
 
 .contact-us button {
@@ -230,4 +238,51 @@
 
 .contact-us button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 480px) {
+  /* Background styling */
+  .background {
+    background-size: calc();
+    padding: 0px 21px;
+  }
+  .navbar svg {
+    display: block;
+  }
+  .navbar {
+    max-width: 247px;
+    position: relative;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 140px;
+    top: 65px;
+    text-align: center;
+  }
+  .nav-menu li {
+    margin-top: 20px;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .what-we-do {
+    padding: 0px 21px;
+  }
+  .dots {
+    display: flex;
+    flex-direction: column;
+  }
+  .results {
+    padding: 0px 21px;
+  }
+  .our-results {
+    background-size: cover;
+  }
+  .contact-us {
+    padding: 110px 20px;
+  }
 }

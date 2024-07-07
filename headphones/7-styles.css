@@ -1,3 +1,29 @@
+/* Keyframe Animations */
+@keyframes leFlyInTop {
+  0% {
+    transform: translate(0px, -80px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(10px, 50px);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes leFadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Reset styles */
 
 * {
@@ -19,6 +45,7 @@
   background-repeat: no-repeat;
   color: #fff;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
+  /* animation: leFadeInBottom 1s forwards; */
 }
 .container {
   max-width: 1300px;
@@ -106,6 +133,7 @@
 .we-do {
   max-width: 637px;
   margin: auto;
+  animation: leFadeInBottom 2s forwards;
 }
 .we-do h1 {
   font-size: 32px;
@@ -137,6 +165,7 @@
 }
 .icon img {
   margin-bottom: 23px;
+  animation: leFadeInBottom 2s forwards;
 }
 .icon h2 {
   font-size: 18px;
@@ -145,6 +174,7 @@
 }
 .icon p {
   font-size: 14px;
+  animation: leFlyInTop 2s linear;
 }
 .icon span {
   display: block;
@@ -173,11 +203,13 @@
   font-weight: bold;
   padding-top: 141px;
   padding-bottom: 40px;
+  animation: leFadeInBottom 2s forwards;
 }
 .our-results p {
   font-size: 16px;
   max-width: 637px;
   margin: auto;
+  animation: leFadeInBottom 2s forwards;
 }
 .dots {
   display: flex;
@@ -189,6 +221,7 @@
   width: 190px;
   height: 190px;
   margin-top: 56px;
+  animation: leFlyInTop 2s linear;
 }
 /* Contact us section styling */
 .contact-us {
@@ -270,6 +303,7 @@
   width: 190px;
   display: inline-block;
   margin: 90px 20px;
+  animation: leFlyInTop 2s linear;
 }
 .polygon p {
   text-align: center;

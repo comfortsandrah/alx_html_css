@@ -20,7 +20,7 @@
   color: #fff;
   min-height: 100vh; /* Ensure the background covers the entire viewport height */
 }
-.container{
+.container {
   max-width: 1300px;
   margin: auto;
 }
@@ -32,7 +32,7 @@
   align-items: center;
   padding-top: 15px;
 }
-.navbar svg{
+.navbar svg {
   display: none;
 }
 
@@ -103,7 +103,6 @@
 }
 .what-we-do {
   text-align: center;
-  /* padding: 0px 200px; */
 }
 .we-do {
   max-width: 637px;
@@ -128,8 +127,6 @@
   justify-content: space-between;
   margin-top: 97px;
   flex-wrap: wrap;
-
-  /* margin: 97px 382px; */
 }
 .icon {
   display: flex;
@@ -138,12 +135,9 @@
   text-align: center;
   margin-bottom: 110px;
   max-height: 193px;
-
-  /* justify-content: space-between; */
-  /* margin: 97px 382px; */
 }
-.icon img{
-    margin-bottom: 23px;
+.icon img {
+  margin-bottom: 23px;
 }
 .icon h2 {
   font-size: 18px;
@@ -155,4 +149,37 @@
 }
 .icon span {
   display: block;
+}
+@media screen and (max-width: 480px) {
+  /* Background styling */
+  .background {
+    background-size: calc();
+    padding: 0px 21px;
+  }
+  .navbar svg {
+    display: block;
+  }
+  .navbar {
+    max-width: 247px;
+    position: relative;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 140px;
+    top: 65px;
+    text-align: center;
+  }
+  .nav-menu li {
+    margin-top: 20px;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .what-we-do {
+    padding: 0px 21px;
+  }
 }

@@ -160,6 +160,9 @@
   display: flex;
   flex-direction: column;
 }
+.results h2:hover {
+  color: #ff6565; /* Change color on hover */
+}
 .our-results h2 {
   font-size: 32px;
   font-weight: bold;
@@ -174,7 +177,6 @@
 .dots {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 79px;
   flex-wrap: wrap;
 }
 .dots img {
@@ -185,7 +187,7 @@
 /* Contact us section styling */
 .contact-us {
   text-align: center;
-  margin: 0 auto;
+  margin: 101px auto;
   width: 335px;
   height: 373px;
 }
@@ -260,10 +262,11 @@
   height: 190px;
   width: 190px;
   display: inline-block;
-  margin: 90px 20px;
+  margin-top: 90px;
 }
 .polygon p {
   text-align: center;
+  font-weight: bold;  
   margin-top: 10px;
 }
 .polygon p:first-child {
@@ -274,10 +277,6 @@
 
 @media screen and (max-width: 480px) {
   /* Background styling */
-  .background {
-    background-size: calc();
-    padding: 0px 21px;
-  }
   .navbar svg {
     display: block;
   }
@@ -313,10 +312,9 @@
   }
   .our-results {
     background-size: cover;
+    background-position: center;
   }
-  .contact-us {
-    padding: 110px 20px;
-  }
+
   .footer {
     padding: 48px 50px;
   }
@@ -331,5 +329,41 @@
     display: flex;
     margin-top: 45px;
     margin-bottom: 45px;
+  }
+  .polygon {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .background {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    padding: 0px 66px;
+  }
+  .footer {
+    padding: 48px 50px;
+  }
+
+  .icon-container {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dots {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+  .our-results {
+    background-size: cover;
+    background-position: center;
+  }
+  .polygon {
+    margin-top: 60px;
+    margin-bottom: 50px;
   }
 }
